@@ -8,6 +8,8 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 
 const sortBackwards = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => a < b);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,6 +24,8 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
+  arr.sort();
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,6 +36,8 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => a.length > b.length);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,7 +50,13 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => a.toUpperCase() > b.toUpperCase());
+  return arr;
 };
+
+// const newPeople = people.sort( (a,b) =>
+//   a.name.toUpperCase() < b.name.toUpperCase()
+// );
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -61,7 +73,13 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => a.price > b.price);
+  return arr;
 };
+
+// const newPeople = people.sort( (a,b) =>
+//   a.name.toUpperCase() < b.name.toUpperCase()
+// );
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -73,6 +91,8 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 
 const sortNumbersByLength = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => a.toString().length - b.toString().length);
+  return arr;
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -95,6 +115,8 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
+  arr.sort((a,b) => a.lastName > b.lastName);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,8 +131,12 @@ If two people have the same full name, the younger one should come first. Do not
 
 const sortPeopleBetter = (arr) => {
   // Solution code here...
-};
 
+};
+//  if(a.lastName === b.lastname){
+//   arr.sort((a,b) => a.firstName > b.firstName);
+// }else if(a.firstName.lastname === b.firstName.lastname){
+// }else {arr.sort((a,b)=> a.lastName > b.lastName);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
 
