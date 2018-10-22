@@ -1,0 +1,11 @@
+img {
+  width: 200px;
+}
+
+
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4em;
+}
