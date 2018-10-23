@@ -18,18 +18,17 @@
     </section>
   </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script src="app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-
 <script id='image-template' type='text/x-handlebars-template'>
-  <section >
-    <img src="{{image_url}}" alt=""/>
-    <p>{{name}}</p>
-    <div>{{hobbies}}</div>
-  </section>
+    <section >
+      <img src="{{image_url}}" alt=""/>
+      <p>{{title}}</p>
+      <div>{{description}}</div>
+    </section>
 </script>
+<script src="app.js"></script>
 </html>
