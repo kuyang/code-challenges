@@ -14,6 +14,8 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
+  let regex = /\d/g;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,8 +28,11 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let regex = /[A-Z]\w*/g;
+  return str.match(regex);
 };
 
+  //return regex.match(str);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
