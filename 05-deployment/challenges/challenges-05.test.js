@@ -16,22 +16,13 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
-  for(let i=0;i<str.length+1;i++){
+  for(let i=0;i<=str.length;i++){
     let lessPencil = str.slice(i,str.length)
     //let lessPencil = str.slice(0,1) this was repeating the same
     result.push(lessPencil)
   }
   return result;
 }
-// const howMuchPencil = (str) => {
-//   let result = [];
-//   // Solution code here...
-// for (let i = 0;i < str.length +1;i++){
-//   let sharper = str.slice(i, str.length)
-//   result.push(sharper);
-// }
-// return result;
-// };
 
 
 /* ------------------------------------------------------------------------------------------------
