@@ -82,6 +82,9 @@ Write a function named getHouses that returns a new array containing the names o
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  Object.values(arr).forEach(houseName => {
+    houses.push(houseName.house)
+  });
   return houses;
 }
 
@@ -99,6 +102,7 @@ hasChildrenValues(characters, 'Eddard') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  
 }
 
 /* ------------------------------------------------------------------------------------------------
