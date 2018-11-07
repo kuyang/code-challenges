@@ -35,8 +35,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
-  let word = []
-  return word.split(arr)
+  return arr.split('');
 };
 
 
@@ -84,6 +83,12 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+
+  for(let i=0; i<recipe.ingredients.length; i++){
+    let path = recipe.ingredients[i];
+    let slicing = path.slice('pounds')
+    result.push(slicing)
+  }
   return result;
 }
 
@@ -98,6 +103,13 @@ You may also use other string or array methods.
 const splitFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  for(let i=0; i<recipe.ingredients.length; i++){
+    // let itemArr = [];
+    let splitting = recipe.ingredients[i].split(" ").slice(2).join(" ");
+    result.push(splitting);
+    // let slicing = itemArr.slice(2);
+    // result.push(slicing);
+  }
   return result;
 }
 
@@ -114,6 +126,11 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 const stepActions = (recipe) => {
   let result = [];
   // Solution code here...
+  for(let i=0; i<recipe.steps.length; i++){
+    let spliting = recipe.steps[i].split(" ").slice(0,1).join(" ");
+    result.push(spliting);
+
+  }
   return result;
 }
 
@@ -132,6 +149,11 @@ For example:
 
 const removeEvenValues = (arr) => {
   // Solution code here...
+  for(let i = arr.length -1; i >=0; i--){
+    if((arr[i] % 2) === 0){
+      arr.splice(i,1)
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
