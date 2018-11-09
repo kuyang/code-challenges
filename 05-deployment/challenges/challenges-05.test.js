@@ -86,8 +86,9 @@ const listFoods = (recipe) => {
 
   for(let i=0; i<recipe.ingredients.length; i++){
     let path = recipe.ingredients[i];
-    let slicing = path.slice('pounds')
-    result.push(slicing)
+    let slicing = path.slice(path.indexOf(" ")+1, path.length);
+    let slicing2 = slicing.slice(slicing.indexOf(" ")+1, slicing.length);
+    result.push(slicing2);
   }
   return result;
 }
@@ -173,6 +174,7 @@ removeLastCharacters('Gregor', 9) returns ''
 
 const removeLastCharacters = (str, numberOfCharacters) => {
   // Solution code here...
+  return str.slice(0, str.length - numberOfCharacters)
 };
 
 
