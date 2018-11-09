@@ -26,6 +26,10 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  arr.forEach((value, index)=>{
+    arr[index] = Math.pow(2,value)
+  })
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,6 +40,10 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  arr.map((value, index)=>{
+    arr[index] = Math.pow(2,value)
+  })
+  return arr
 }
 
 /* ------------------------------------------------------------------------------------------------
