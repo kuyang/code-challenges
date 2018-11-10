@@ -29,7 +29,6 @@ const filterStringsWithVowels = (arr) => {
   return arr.filter(x => (/^[aeiou]/i).test(x))
 };
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
